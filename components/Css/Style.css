@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --color-primary1: #yellow ;
+    --color-primary2:  ;
+    --color-primary3:  ;
+
+    --color-white:  ;
+    --color-background:  ;
+    --color-title: ;
+
+
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.Container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.308), rgba(255, 255, 255, 0.332)), url(/Images/jfeifoql.png);
+}
+.Container__title{
+    display: flex;
+    margin: auto;
+    width: 600px;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    top: 50px;
+    left: 180px;
+    font-weight: 300;
+    font-size: 2rem;
+    background: #00000052;
+}
+
+.Container__title img{
+    width: 250px;
+    height: 125px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.line{
+    height: 100px;
+    position: relative;
+    top: 15px;
+    border-left: 1px solid #ffff ;
+}
+
+.container__title_text h2{
+    position: relative;
+    top: -20px;
+    color: #ffff;
+    padding-left: 1rem;
+    font-weight: 300;
+}
+
+.container__title_text b{
+    font-weight: 600;
+    color:#ffff;
+
+}
+
+.form_ingreso{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 450px;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    top: 100px;
+    left: 850px;
+    border-radius: 5px;
+    background: #ffff;
+}
+
+.Form_usuarios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.Form_usuarios label{ 
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.Title__Container{ 
+    margin: auto;
+    padding-left: 3rem;
+    width: 50vw;
+    position: relative;
+    color: #ffff;
+    background: #0000006e;
+    font-size: 2rem;  
+}
+
+
+
+.form__container{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 22vw;
+    background: yellow ;
+    border-radius: 6px;
+}
+
+.form__container p{
+    padding: 1rem 1rem 1rem 1rem;
+
+}
+
+.form__container h3{
+    padding-left: 1rem;
+    padding-bottom: 0.6rem;
+}
+
+.form__container input{
+    display: flex;
+    
+}
+
+/**-----Nav-bar-Ingreso-----****/
+
+.navjustify-content-end{
+    display: flex;
+    height: 92px;
+    background: #1E1E1D;
+    color: #ffff;
+    font-weight: 500;
+    list-style: none;
+}
+
+.navjustify-content-end img{
+    width: 110px;
+    height: 40px;
+    position: relative;
+    top: 25px;
+    left: 350px;
+}
+
+.nav-item{
+    padding: 1rem;
+    position: relative;
+    top: 25px;
+    left: 750px;
+    color: #ffff;
+}
+
+.nav-link{ 
+    padding-bottom: 0.3rem;
+    color: #ffff;
+}
+
+.nav-link:hover{
+    border-bottom: 1px #FEB100 solid;
+}
+
+.transparent{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/Images/jfeifoql.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.Titlepage{
+    width: 100ww;
+    height:10vh;
+    background-color: #ffff;
+}
+
+.Titlepage h2{
+    position: relative;
+    top: 35px;
+    left: 350px;
+    font-size: 1.4rem; 
+    font-weight: 300;
+}
+
+
+.SubtitleRegis{
+    width: 50vw;
+    display: 100vh;
+    justify-content: center;
+    position: relative;
+    top: 190px;
+    left: 400px;
+    border-bottom: 0.5px #ffff solid;
+    
+}
+
+.SubtitleRegis h2{
+    padding-bottom: 1.5rem;
+    font-size: 2.8rem;
+    
+}
+
+.form-title{
+    width: 50vw;
+    height:auto ;
+    position: relative;
+    top: 200px;
+    left: 400px;
+    font-weight: 200;
+    border-radius: 3px 3px 3px 3px;    
+    background-color: #ffff;
+}
+
+.form-title h3{
+    padding: 0.5rem;
+    font-weight: 300;
+    border-bottom: 0.5px #757575 solid;
+}
+
+.formp{
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.form {
+    max-width: 900px; /* Ajusta el ancho del formulario según tus necesidades */
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem; ;
+}
+
+.input-group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem; ;
+}
+
+
+
+label {
+    flex: 1;
+    font-weight: 500;
+}
+
+input, select {
+    height: 30px;
+    flex: 2;
+}
+
+.buttomlogin{
+    width: 100px;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    color: #ffff;
+    background: #FEB100;
+    border-radius: 3px 3px 3px 3px;
+    border: none;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#signature-pad{
+    width: 95%;
+    height: 70%;
+    padding: 1rem;
+    background: #ffff;
+    border: #757575;
+}
+
+#clear-signature{
+    width: 70px;
+    position: relative;
+    left: 80px;
+    background:  #757575;
+}
+
+/**----FOOTER**/
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background: #757575;
+}
+
+
+footer .footer_copy{
+    text-align: center;
+    color:#ffff
+}
+
+.footer_copy img{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+
+
+

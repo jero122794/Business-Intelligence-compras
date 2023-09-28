@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Facturas</title>
+    <link rel="stylesheet" href="/components/Css/Style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navjustify-content-end">
+            <img src="/Images/Recurso 1.png" alt="">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/parts/Registrodefacturas.html">Registro Facturas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/parts/facturasreg.html">Facturas Registradas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/parts/Boletas.html">Boletas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/parts/TusDatos.html">Tus Datos</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" href="/Index.html">Salir</a><span>X</span>
+            </li>
+        </ul>
+    </div>
+    <div class="Titlepage">
+        <h2>Boletas</h2>
+    </div>
+    <main>
+    <div class="transparent"> 
+        <div class="SubtitleRegis">
+            <h2>
+                Boletas
+            </h2>
+        </div>
+        <div class="form-title">
+            <h3>Datos del cliente</h3>
+            <div class="form">
+                <div class="formp">
+                    <h4>*Firma</h4>
+                    <p>Con esta firma y de conformidad con la ley Estatutaria 1581 de 2012 y el decreto 1377 de 2013 autorizo al centro comercial para recolectar, almacenar, usar, analizar y procesar los datos personales por mi suministrados y aquellos que actualice en el futuro de acuerdo con la política para el tratamiento de datos personales de la cual he sido informado.</p>
+                </div>
+                <div id="signature-pad">
+                    <canvas></canvas>
+                    <button type="button" id="clear-signature">Limpiar</button>
+                </div>
+                <input type="hidden" name="firma" id="firma-base64">
+            </div>
+            <button type="submit">Enviar</button>
+            </div>
+            <div class="table">
+                <table>
+                    <!--                    Aqui va la tabla-->
+                </table>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+    </footer>
+    </body> 
+</html>   

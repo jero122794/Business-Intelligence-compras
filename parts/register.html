@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de facturas</title>
+    <link rel="stylesheet" href="/components/Css/Style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navjustify-content-end">
+            <img src="/Images/Recurso 1.png" alt="">
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" href="/Index.html">Regresar</a>
+            </li>
+        </ul>
+    </div>
+    <div class="Titlepage">
+        <h2>Registro de facturas</h2>
+    </div>
+    <main>
+    <div class="transparent"> 
+        <div class="SubtitleRegis">
+            <h2>
+                Registro del cliente
+            </h2>
+        </div>    
+        <!--        Formulario para registrar una nueva factura-->
+        <div class="form-title">
+            <h3>Datos del cliente</h3>
+            <div class="form">
+                <div class="formp"><p>A continuación ingrese los datos solicitados y de clic en registrar</p></div>
+                <div class="input-group">
+                    <label for="Numberfac">*Tipo de documento</label>
+                    <select class="" id="Tipodoc" aria-label="Floating label select exa" required>
+                        <option selected>Elige una opción</option>
+                        <option value="1">Cédula</option>
+                        <option value="2">Extranjería</option>
+                        <option value="3">Pasaporte</option>
+                        <option value="4">NIT</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="Dociden">*Documento de identidad</label>
+                    <input type="text" name="Doc" id="Doc" required>
+                </div>
+                <div class="input-group">
+                    <label for="Name">*Primer nombre</label>
+                    <input type="text" name="Fname" id="Vfac" required>
+                </div><div class="input-group">
+                    <label for="Secname">Segundo nombre</label>
+                    <input type="text" name="name" id="name"  required>
+                </div><div class="input-group">
+                    <label for="Apellido">*Primer apellido</label>
+                    <input type="text" name="lastname" id="lastname"  required>
+                </div><div class="input-group">
+                    <label for="Secapell">Segundo apellido</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="input-group">
+                    <label for="date">*Fecha de nacimiento</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="input-group">
+                    <label for="Medio">*Género</label>
+                    <select class="" id="Gen" aria-label="Floating label select exa" required>
+                        <option selected>Elige una opción</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="Email">*Nùmero de celular</label>
+                    <input type="text" name="tel" id="tel" required>
+                </div>
+                <div class="input-group">
+                    <label for="Dociden">*E-mail</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="City">*Ciudad</label>
+                    <select class="" id="City" aria-label="Floating label select exa" required>
+                        <option selected>Elige una opción</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="Dociden">*Dirección</label>
+                    <input type="text" name="dir" id="dir" required>
+                </div>
+                <div class="input-group">
+                    <label for="EstCivi">*Estado civil</label>
+                    <select class="" id="escivi" aria-label="Floating label select exa" required>
+                        <option selected>Elige una opción</option>
+                        <option value="1">Casado</option>
+                        <option value="2">Celibato</option>
+                        <option value="3">Divorciado</option>
+                        <option value="4">Separado</option>
+                        <option value="5">Soltero</option>
+                        <option value="6">Unión Libre</option>
+                        <option value="7">Viudo</option>
+                </select>
+                </div>
+                <div class="input-group">
+                    <label for="nivest">*Nivel de Estudio</label>
+                    <select class="" id="nivest" aria-label="Floating label select exa" required>
+                        <option selected>Elige una opción</option>
+                        <option value="1">Casado</option>
+                        <option value="2">Celibato</option>
+                        <option value="3">Divorciado</option>
+                        <option value="4">Separado</option>
+                        <option value="5">Soltero</option>
+                        <option value="6">Unión Libre</option>
+                        <option value="7">Viudo</option>
+                </select>
+                </div>
+                <div class="input-group2">
+                    <label for="firma">*Firma</label>
+                    <p>Con esta firma autorizas voluntariamente al Centro Comercial el tratamiento de tus datos personales.</p>
+                    <div id="signature-pad">
+                        <canvas></canvas>
+                        <button type="button" id="clear-signature">Limpiar</button>
+                    </div>
+                    <input type="hidden" name="firma" id="firma-base64">
+                </div>
+                <form id="miFormulario" action="/components/php/envio.php"    method="post">
+                    <button type="submit" id="enviarBoton">Enviar</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer_copy">
+            Copyright © 2023. Todos los derechos reservados | Diseñado por: <NAME>BUSINESS INTELLIGENCE<NAME>.
+            <img src="/Images/LOGO BIC-PhotoRoom.png" alt="" srcset="">
+        </div>
+    </footer>
+</body>
+<script src="/components/JS/signature.js"></script>
+<script src="/components/JS/validar.js"></script>
+
+</html>
